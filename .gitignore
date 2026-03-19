@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# 가상환경
+venv/
+env/
+ENV/
+.venv/
+
+# 환경변수
+.env
+*.env
+
+# IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# oh-my-claudecode / claude
+.omc/
+.claude/
+
+# 데이터베이스
+*.db
+*.sqlite3
+
+# 로그
+*.log
+
+# 테스트 커버리지
+.coverage
+htmlcov/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
