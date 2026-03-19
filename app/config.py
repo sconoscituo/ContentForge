@@ -36,6 +36,10 @@ class Settings(BaseSettings):
     credits_blog: int = 2
     credits_twitter: int = 1
 
+    # 포트원(PortOne) 결제 연동
+    portone_api_key: str = Field(default="", env="PORTONE_API_KEY")
+    portone_api_secret: str = Field(default="", env="PORTONE_API_SECRET")
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"

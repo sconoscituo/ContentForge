@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 from app.database import init_db
-from app.routers import content, users
+from app.routers import content, users, templates
 
 
 @asynccontextmanager
@@ -57,6 +57,7 @@ app.add_middleware(
 # 라우터 등록
 app.include_router(users.router)
 app.include_router(content.router)
+app.include_router(templates.router, prefix="/api/v1")
 
 
 @app.get("/", tags=["health"])
